@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | Individual Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">MINTY // WEB</div>
+  <div class="nav-links">
+    <a href="index.html" class="">About Me</a>
+    <a href="game.html" class="">Favourite Game</a>
+    <a href="feedback.html" class="active">Evaluation Log</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Evaluation<br>Log</h1>
+  <p>Leave an evaluation about this website presentation.</p>
+</header>
+
+<main class="container">
+  <h2 class="section-title">Evaluation Log</h2>
+  <section class="grid">
+    <div class="card full">
+      <form id="feedbackForm">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
+
+        <label>
+          Rating
+          <select name="rating" required>
+            <option value="">Choose a rating</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Needs Improvement</option>
+          </select>
+        </label>
+
+        <label>
+          Comment
+          <textarea name="comment" placeholder="Write your evaluation here..." required></textarea>
+        </label>
+
+        <button type="submit">Submit Evaluation</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h2>Evaluation Recorded</h2>
+    <p>Your evaluation has been successfully recorded. Thank you for your feedback!</p>
+    <button id="closePopup">Close</button>
+  </div>
+</div>
+
+<footer>Designed by NazMinty • Evaluation Log</footer>
+<script src="script.js"></script>
+</body>
+</html>
